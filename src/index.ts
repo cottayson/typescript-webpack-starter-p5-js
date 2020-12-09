@@ -1,17 +1,44 @@
 import "./styles.css";
 import * as _ from "lodash";
+import { Point } from "./point";
 
-window.addEventListener("load", () => {
-    const header = document.createElement("h1");
-    header.innerText = "Webpack❤️TS"
+declare const window: Window;
+interface Window {
+  arr: number[]
+};
+window.arr = [1, 2, 3, 4, 5];
 
-    const body = document.querySelector("body");
-    body.appendChild(header);
+/**
+ * Type Book Type = {0, 1, 2}
+ */
+type BookType = 0 | 1 | 2;
 
-    const food = [{id: 0, name: "pizza"}, {id: 1, name: "sushi"}]
+/**
+ * Represents a book.
+ * @constructor
+ * @param {string} title - The title of the book.
+ * @param {string} author - The author of the book.
+ * @param {BookType} bookType - Number that corresponds to type of book.
+ * @param {Date} date - Date of writing a book.
+ */
+function Book(title: string, author: string, bookType: BookType, date: Date) {
+  return { title, author, bookType, date };
+}
 
-    const foodElement = document.createElement("h2")
-    foodElement.innerText = _.find(food, {id: 0})?.name;
+addEventListener('load', function () {
+  const book1 = Book("book title", "book author", 1, new Date(2020, 12, 1));
 
-    body.appendChild(foodElement);
+  let point = new Point(10, 20);
+  console.log(point.length);
+  point.print();
+  
+  console.warn(book1);
+
+  const message = document.getElementById('message');
+  if (message === null) {
+    console.error(`Not found element message`);
+  } else {
+    message.innerHTML = `Hello typescript! ❤️`;
+  }
 })
+
