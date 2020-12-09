@@ -34,3 +34,6 @@ https://codepen.io/roykn/pen/oJoqGy?editors=0010
   * Enter in text field `Change File Encoding`
   * Choose `Reopen with encoding`
   * And select UTF-8
+
+# Import p5.js
+https://medium.com/front-end-weekly/learning-the-p5-canvas-drawing-library-in-es6-and-webpack-bf514a679544

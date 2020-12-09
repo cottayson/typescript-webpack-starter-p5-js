@@ -23,6 +23,8 @@
     "webpack-html-plugin": "^0.1.1"
   },
   "dependencies": {
-    "lodash": "^4.17.20"
+    "@types/p5": "^0.9.1",
+    "lodash": "^4.17.20",
+    "p5": "^1.1.9"
   }
 }

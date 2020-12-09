@@ -18,7 +18,7 @@ How to make same logging tags: `[SOME_TAG] Message`?
 using instance mode to p5.js
 https://github.com/processing/p5.js/wiki/p5.js-overview#instantiation--namespace
 
-# Visualize using force hraph
+# Visualize using force graph
 * Use force graph to visualise graph of states
   https://observablehq.com/@d3/force-directed-graph
   https://spin.atomicobject.com/2017/07/20/d3-react-typescript/
